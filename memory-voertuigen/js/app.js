@@ -28,22 +28,22 @@ const playAgain = document.querySelector('.restart'); //playAgain button
  * A list of 16 cards
  */
 const cards = [
-  'hond.jpg',
-  'hond.jpg',
-  'poes.jpg',
-  'poes.jpg',
-  'konijn.jpg',
-  'konijn.jpg',
-  'eend.jpg',
-  'eend.jpg',
-  'paard.jpeg',
-  'paard.jpeg',
-  'varken.jpg',
-  'varken.jpg',
-  'koe.JPG',
-  'koe.JPG',
-  'kip.png',
-  'kip.png'
+  'auto.jpg',
+  'auto.jpg',
+  'bus.jpg',
+  'bus.jpg',
+  'traktor.jpg',
+  'traktor.jpg',
+  'fiets.jpg',
+  'fiets.jpg',
+  'trein.jpeg',
+  'trein.jpeg',
+  'brommer.jpg',
+  'brommer.jpg',
+  'vliegtuig.JPG',
+  'vliegtuig.JPG',
+  'helikopter.png',
+  'helikopter.png'
 ];
 
 /*
