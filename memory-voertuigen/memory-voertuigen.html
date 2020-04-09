@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- Metatags & Title  -->
+  <meta charset="utf-8">
+
+  <title>Matching Game</title>
+  <meta content="Filip Reniers" name="author">
+  <meta content="Memory game boerderij" name="description">
+  <!--Viewport -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!--Stylesheets -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet prefetch">
+  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet prefetch">
+  <link href="css/app.css" rel="stylesheet"><!-- References -->
+  <!--Icons retrieved from MPL Wiki My Little Pony: "http://mlp.wikia.com/wiki/My_Little_Pony_Friendship_is_Magic_Wiki" MLP.Wiki/" 
+   Emoticons retrieved from Emojipedia: "https://emojipedia.org/" -->
+</head>
+
+<body>
+  <!-- Container gameStart -->
+
+  <audio id="audio_hond"><source src="sounds/hond.mp3" type="audio/mp3"></audio>
+  <audio id="audio_koe"><source src="sounds/koe.mp3" type="audio/mp3"></audio>
+  <audio id="audio_poes"><source src="sounds/poes.mp3" type="audio/mp3"></audio>
+  <audio id="audio_varken"><source src="sounds/varken.mp3" type="audio/mp3"></audio>
+  <audio id="audio_eend"><source src="sounds/eend.mp3" type="audio/mp3"></audio>
+  <audio id="audio_konijn"><source src="sounds/konijn.mp3" type="audio/mp3"></audio>
+  <audio id="audio_paard"><source src="sounds/paard.mp3" type="audio/mp3"></audio>
+  <audio id="audio_kip"><source src="sounds/kip.mp3" type="audio/mp3"></audio>
+
+  <div class="container" id="gameStart">
+    <header>
+      <h1>Memory boerderij</h1>
+    </header>
+    <!-- Scorepanel with game settings: stars, moves, time & restart button -->
+
+
+    <section class="score-panel">
+      <ul class="stars">
+        <li><i class="fa fa-star"></i>
+        </li>
+
+
+        <li><i class="fa fa-star"></i>
+        </li>
+
+
+        <li><i class="fa fa-star"></i>
+        </li>
+      </ul>
+      Moves: <span class="moves" id="movesEl">0</span> Time: <span class="timer">00:00</span>
+
+      <div class="restart">
+        <i class="fa fa-repeat"></i>
+      </div>
+    </section>
+    <!-- Deck of Cards -->
+
+
+    <ul class="deck" id="deck">
+    </ul>
+  </div>
+  <!-- Modal Box, adapted from https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+
+  <div id="modal">
+    <!-- Close the Modal -->
+    <span class="close, restart">&times;</span> <!-- Modal content -->
+
+
+    <h1 class="modal-title">Goed zo! &#x1F404;</h1>
+
+
+    <h2 class="modal-rating">Je hebt gewonnen, jouw tijd is:</h2>
+    <!-- Modal settings -->
+
+
+    <p><span class="timer" id="timer"></span>
+    </p>
+
+
+    <p id="totalMoves">Aantal klikjes: <label class="moves"></label></p>
+
+
+    <ul class="stars">
+      <li style="list-style: none">Sterren:</li>
+
+
+      <li><i class="fa fa-star"></i>
+      </li>
+
+
+      <li><i class="fa fa-star"></i>
+      </li>
+
+
+      <li><i class="fa fa-star"></i>
+      </li>
+    </ul>
+
+    <button class="restart" id="playAgain">Speel opnieuw</button>
+  </div>
+  <!-- JavaScript -->
+  <script src="js/app.js">
+  </script>
+</body>
+</html>
