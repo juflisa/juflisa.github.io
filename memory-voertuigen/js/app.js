@@ -36,14 +36,14 @@ const cards = [
   'traktor.jpg',
   'fiets.jpg',
   'fiets.jpg',
-  'trein.jpeg',
-  'trein.jpeg',
+  'trein.jpg',
+  'trein.jpg',
   'brommer.jpg',
   'brommer.jpg',
-  'vliegtuig.JPG',
-  'vliegtuig.JPG',
-  'helikopter.png',
-  'helikopter.png'
+  'vliegtuig.jpg',
+  'vliegtuig.jpg',
+  'helikopter.jpg',
+  'helikopter.jpg'
 ];
 
 /*

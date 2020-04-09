@@ -26,12 +26,12 @@ html, body {
 /* Body */
 
 body {
-  background: #ffffff url("https://pixnio.com/free-images/2018/11/12/2018-11-12-13-44-06-1200x800.jpg") no-repeat;
+  background: #ffffff url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Provinciale_weg_236_%28from_Weesp_to_Bussum%29.jpg/1200px-Provinciale_weg_236_%28from_Weesp_to_Bussum%29.jpg") no-repeat;
   background-size: cover; -ms-background-size: cover; -o-background-size: cover; -moz-background-size: cover; -webkit-background-size: cover;
   /* Background pattern from DevianArt by AllowedPlz ©2012-2018 MLP-Vector-Collabs*/
   font-family: "Segoe UI";
   font-weight: 600;
-  color: #00522b;
+  color: #00009c;
   font-size: 36px;
 }
 
@@ -50,7 +50,7 @@ h1 {
   font-family: "Segoe UI";
   font-size: 48px;
   font-weight: 900;
-  color: #00522b;
+  color: #00009c;
 }
 
 /*
@@ -60,7 +60,7 @@ h1 {
 .deck {
   width: 660px;
   min-height: 680px;
-  background: linear-gradient(160deg, #00c94a 0%, #00522b 100%);
+  background: linear-gradient(160deg, #4281ff 0%, #00522b 100%);
   padding: 32px;
   border-radius: 10px;
   box-shadow: 12px 15px 20px 0 #2e3d49;
@@ -123,7 +123,7 @@ h1 {
   font-family: "Segoe UI";
   font-weight: 600;
   font-size: 24px;
-  color: #00522b;
+  color: #00009c;
   text-align: left;
   width: 345px;
   margin-bottom: 10px;
@@ -186,7 +186,7 @@ h1 {
 .modal-content {
   font-family: "Segoe UI";
   font-weight: 600; 
-  color: #00522b;
+  color: #00009c;
   font-size: 24px;
   top: 50%;
   left: 50%;
@@ -200,14 +200,14 @@ h1 {
 .modal-text {
   font-family: "Segoe UI";
   font-weight: 600; 
-  color: #00522b;
+  color: #00009c;
   font-size: 24px;
 }
 
 p.modal-text {
   font-family: "Segoe UI";
   font-weight: 600; 
-  color: #00522b;
+  color: #00009c;
   font-size: 24px;
 }
 
@@ -218,7 +218,7 @@ p.modal-text {
   margin: auto;
   border-radius: 8px;
   color: #fff;
-  background-color: #00522b;
+  background-color: #00009c;
   font-size: 20px;
 }
 
