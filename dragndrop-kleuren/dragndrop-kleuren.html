@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Drag and Drop Puzzle</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+
+  	<audio id="audio0"><source src="sounds/groen.mp3" type="audio/mp3"></audio>
+  	<audio id="audio1"><source src="sounds/rood.mp3" type="audio/mp3"></audio>
+  	<audio id="audio2"><source src="sounds/geel.mp3" type="audio/mp3"></audio>
+  	<audio id="audio3"><source src="sounds/bruin.mp3" type="audio/mp3"></audio>
+  	<audio id="audio4"><source src="sounds/grijs.mp3" type="audio/mp3"></audio>
+  	<audio id="audio5"><source src="sounds/roos.mp3" type="audio/mp3"></audio>
+  	<audio id="audio6"><source src="sounds/zwart.mp3" type="audio/mp3"></audio>
+  	<audio id="audio7"><source src="sounds/oranje.mp3" type="audio/mp3"></audio>
+  	<audio id="audio8"><source src="sounds/wit.mp3" type="audio/mp3"></audio>
+  	<audio id="audio9"><source src="sounds/paars.mp3" type="audio/mp3"></audio>
+  	<audio id="audio10"><source src="sounds/lichtblauw.mp3" type="audio/mp3"></audio>
+  	<audio id="audio11"><source src="sounds/donkerblauw.mp3" type="audio/mp3"></audio>
+
+  	<audio id="audio_goed0"><source src="sounds/groen_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed1"><source src="sounds/rood_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed2"><source src="sounds/geel_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed3"><source src="sounds/bruin_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed4"><source src="sounds/grijs_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed5"><source src="sounds/roos_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed6"><source src="sounds/zwart_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed7"><source src="sounds/oranje_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed8"><source src="sounds/wit_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed9"><source src="sounds/paars_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed10"><source src="sounds/lichtblauw_goed.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_goed11"><source src="sounds/donkerblauw_goed.mp3" type="audio/mp3"></audio>
+  	
+  	<audio id="audio_fout0"><source src="sounds/groen_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout1"><source src="sounds/rood_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout2"><source src="sounds/geel_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout3"><source src="sounds/bruin_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout4"><source src="sounds/grijs_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout5"><source src="sounds/roos_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout6"><source src="sounds/zwart_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout7"><source src="sounds/oranje_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout8"><source src="sounds/wit_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout9"><source src="sounds/paars_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout10"><source src="sounds/lichtblauw_fout.mp3" type="audio/mp3"></audio>
+  	<audio id="audio_fout11"><source src="sounds/donkerblauw_fout.mp3" type="audio/mp3"></audio>
+
+
+	<div style="display:none;">
+  	     <img id="loudspeaker0" 
+		  src="images/luidspreker.png"
+       		  width="225" height="225">
+	</div>
+
+  	<div style="display:none;">
+           <img id="loudspeaker1"
+  	        src="images/luidspreker.png"
+  	        width="225" height="225">
+        </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker2"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker3"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker4"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker5"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker6"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker7"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker8"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker9"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker10"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+<div style="display:none;">
+           <img id="loudspeaker11"
+src="images/luidspreker.png"
+width="225" height="225">
+                   </div>
+
+
+	
+    
+	
+
+        <section id="game-space">
+            <canvas id="game-board"></canvas>
+            <div id="congrats">
+                <h1>You Win!</h1>
+                <h2>Congratulations!</h2>
+                <p><input type="button" id="playagainBtn" value="Play Again"></p>
+            </div>
+            <div id="instructions">
+                <h1>How to Play</h1>
+                <ul>
+                    <li>The puzzle pieces are scrambled in the piece drawer</li>
+                    <li>Each piece belongs somewhere in the grid</li>
+                    <li>Click and drag each piece to where it belongs</li>
+                </ul>
+                <p><input type="button" id="startBtn" value="Start!"></p>
+                <p>Photo by <a href="https://unsplash.com/photos/E0su4LQzQ4c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marco Secchi</a> on <a href="https://unsplash.com/t/animals?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/puzzle.js"></script>
+        <script type="text/javascript">
+            // Everything is set up, get it all started when the document has loaded
+            window.addEventListener('load', function() { gameBoard.init(); });
+        </script>
+    </body>
+</html> 
