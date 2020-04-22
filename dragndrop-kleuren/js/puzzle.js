@@ -342,11 +342,28 @@ const gameBoard = {
         var x = 0, y = 0, p;
 
         var totalWidth = Math.ceil(this.pieces.length / rows) * (this.pieceSize+padding);
-        
+        var mid = this.pieceSpace.width/2;
+
+        var permutation = [];
+        var pick = [];
+
+        for (var i = 0; i < this.pieces.length; i++) {
+            pick.push(i);
+        }
+        var i = 1000;
+        while(pick.length > 0){
+            var randomi = Math.floor(Math.random()*pick.length);
+            permutation.push(pick[randomi]);
+            pick = pick.slice(0,randomi).concat(pick.slice(randomi+1));
+            console.log(pick,permutation);
+            i--;
+            if (i<0)break;
+        }
+
         for ( var i = 0, ln = this.pieces.length; i < ln; i++ ) {
-            x = Math.floor(i/rows)* (this.pieceSize+padding) + totalWidth/2;// Math.floor( Math.random() * drawWidth );
+            x = mid + Math.floor(i/rows)* (this.pieceSize+padding) - totalWidth/2;// Math.floor( Math.random() * drawWidth );
             y = (i%rows) *(this.pieceSize+padding); //Math.floor( Math.random() * drawHeight );
-            p = this.pieces[i];
+            p = this.pieces[permutation[i]];
             p.setBoardPosition(x + this.pieceSpace.left, y + this.pieceSpace.top);
         }
     },
