@@ -337,11 +337,15 @@ const gameBoard = {
     scramblePieces: function () {
         var drawWidth = this.pieceSpace.width - this.pieceSize;
         var drawHeight = this.pieceSpace.height - this.pieceSize;
+        var padding = 10;
+        var rows = 2;
         var x = 0, y = 0, p;
+
+        var totalWidth = Math.ceil(this.pieces.length / rows) * (this.pieceSize+padding);
         
         for ( var i = 0, ln = this.pieces.length; i < ln; i++ ) {
-            x = Math.floor( Math.random() * drawWidth );
-            y = Math.floor( Math.random() * drawHeight );
+            x = Math.floor(i/rows)* (this.pieceSize+padding) + totalWidth/2;// Math.floor( Math.random() * drawWidth );
+            y = (i%rows) *(this.pieceSize+padding); //Math.floor( Math.random() * drawHeight );
             p = this.pieces[i];
             p.setBoardPosition(x + this.pieceSpace.left, y + this.pieceSpace.top);
         }
