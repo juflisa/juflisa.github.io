@@ -126,9 +126,9 @@ const gameBoard = {
     slots: [],
     pieceSpace: null,
     boardSpace: null,
-    pieceSize: 120,
-    MAX_PUZZLE_WIDTH: 480,
-    MAX_PUZZLE_HEIGHT: 360,
+    pieceSize: 160,
+    MAX_PUZZLE_WIDTH: 640,
+    MAX_PUZZLE_HEIGHT: 480,
     isDragging: false,
     
     // Begin the puzzle
